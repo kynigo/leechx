@@ -50,12 +50,12 @@ async def stats(client, message):
 
 async def start(client, message):
     buttons = ButtonMaker()
-    buttons.ubutton("Repo", "https://www.github.com/anasty17/mirror-leech-telegram-bot")
-    buttons.ubutton("Owner", "https://www.github.com/anasty17")
+    buttons.ubutton("Memories", "https://t.me/sIogan_98")
+    buttons.ubutton("Slogan", "https://t.me/slogan98")
     reply_markup = buttons.build_menu(2)
     if await CustomFilters.authorized(client, message):
         start_string = f'''
-This bot can mirror all your links to Google Drive or to telegram!
+This bot can mirror all your links to telegram!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         await sendMessage(message, start_string, reply_markup)
